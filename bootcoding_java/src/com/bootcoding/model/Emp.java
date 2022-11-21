@@ -1,6 +1,6 @@
 package com.bootcoding.model;
 
-public class Emp implements Comparable<Emp>{
+public class Emp{
     private String name;
     private int age;
     private long phone;
@@ -44,11 +44,4 @@ public class Emp implements Comparable<Emp>{
                 '}';
     }
 
-    @Override
-    public int compareTo(Emp emp) {
-        if(this.getAge()<emp.getAge())
-            return 1;
-        else
-            return 0;
-    }
 }
